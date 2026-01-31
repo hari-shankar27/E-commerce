@@ -39,6 +39,19 @@
                 transition: background 0.5s ease-in;
 
     }
+    .register{
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+        color: black;
+        padding: 3px;
+        border-radius: 2px;
+    }
+    .register:hover{
+        color: white;
+        background-color: red;
+                transition: background 0.5s ease-in;
+    }
 .item::after{
     content: "";
     position: absolute;
@@ -53,3 +66,18 @@
 }.item:hover::after{
     width: 100%;
 }
+ .search input{
+        border: 2px solid grey;
+        border-radius: 2px;
+    }
+    .search i{
+        margin-left: 5px;
+        padding: 2px;
+    }
+    .search button{
+        background-color: white;
+        border: none;
+    }
+    button:hover{
+        background-color: whitesmoke;
+    }
