@@ -6,8 +6,75 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<style>
+    .navbar{
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-between ;
+        gap: 20px;
+        align-items: center;
+    }
 
+    .logo{
+    font-weight: 800;
+    margin-left: 15px;
+    }
+    span{
+        color: rgb(255, 106, 0);
+    }
+
+    .navlists{
+       display: flex;
+       gap: 20px;
+
+    }
+    .item{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        position: relative;
+    }
+    .login{
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+        color: black;
+        padding: 3px;
+        border-radius: 2px;
+    }
+    .login:hover{
+        color: white;
+        background-color: red;
+                transition: background 0.5s ease-in;
+
+    }
+.item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    background-color: blue;
+    height: 2px;
+    transition: width 0.5s ease;
+
+
+}.item:hover::after{
+    width: 100%;
+}
+
+</style>
+<body>
+   <div class="navbar">
+    <p class="logo" >BUY<span>SMART</span></p>
+    <nav class="navlists">
+        <a class="item" href="#">Home</a>
+        <a class="item" href="#">About</a>
+        <a class="item" href="#">Service</a>
+        <a class="item" href="#">Contact</a>
+    </nav>
+    <a class="login" href="login.html">Login</a>
+   </div> 
   
 </body>
 </html>
