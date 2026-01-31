@@ -1,4 +1,8 @@
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
 *{
@@ -6,28 +10,52 @@
     padding:0;
     font-family: sans-serif;
 }
-.input{
-    margin: 100px;
+.box{
+     width: 400px;
+     height: 30px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            
+
 }
+input{   
+    height: 30px;
+   display: block;
+    width: 300px;
+    font-size: 14px;
+
+}
+
+
+YOUR FRIEND (HOST) DOES THIS
+
+1️⃣ Open project in VS Code
+2️⃣ Right-click index.html
+3️⃣ Click “Open with Live Server”
+👉 Website opens on their browser
+
+4️⃣ Now look at bottom of VS Code
+Click “Live Share”
+
+5️⃣ Click “Share Server”
+
+6️⃣ Choose port 5500 
+✅ Done — server is shared 
     </style>
 <body>
     <form>
-        <div class="input">
-    <label>Name</label>
-    <input type="text" placeholder="Enter your username">
-    <br>
+        <div class="box">
+   
     <label>Email</label>
     <input type="email" placeholder="Enter your email">
     <br>
     <label>Password</label>
     <input type="password" placeholder="Enter your password">
     <br>
-    <label>Phone number</label>
-    <input type="number" placeholder="Enter your phone number">
-    <br>Address</label>
-    <textarea>
-    <input type="text" placeholder="Enter your address"></textarea>
-    <br>
+   
+     <button name="submit" type="submit" >Register</button>
     </div>
     </form>
 </body>
